@@ -17,7 +17,7 @@ def add_task():
 @app.route("/get-data")
 def get_task():
     return jsonify({
-        "data":tasks
+        "data":contacts
     })
 
 @app.route("/")

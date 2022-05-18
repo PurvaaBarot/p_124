@@ -12,7 +12,7 @@ def add_task():
             "message":"Please provide data"
         }, 400 )
 
-    contact={ 'id':tasks[-1]["id"]+1, 'name':request.json["name"], 'last_name':request.json["last_name"], 'done':False , "number":request.json.get("number")}
+    contact={ 'id':contacts[-1]["id"]+1, 'name':request.json["name"], 'last_name':request.json["last_name"], 'done':False , "number":request.json.get("number")}
     contacts.append(contact)
 @app.route("/get-data")
 def get_task():
